@@ -51,10 +51,10 @@ class Module(BaseModule, ResolverMixin, ThreadingMixin):
             try:
                 answers = resolver.query(host)
             except (dns.resolver.NXDOMAIN, dns.resolver.NoAnswer):
-                #self.verbose('%s => No record found.' % (host))
+                self.verbose('%s => No record found.' % (host))
                 pass
             except dns.resolver.Timeout:
-                #self.verbose('%s => Request timed out.' % (host))
+                self.verbose('%s => Request timed out.' % (host))
                 attempt += 1
                 continue
             else:
