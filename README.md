@@ -1,6 +1,9 @@
 # DNS_PORT
 Subdomain Brute Forcing and Port Scanning for each live host
 
+# Screenshots
+![Screenshot](/img/1.PNG)
+![Screenshot](/img/2.PNG)
 ## 
 
 # Usage 
